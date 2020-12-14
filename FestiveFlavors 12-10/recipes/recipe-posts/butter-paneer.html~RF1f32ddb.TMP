@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Butter Paneer Recipe</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../assets/intro_10.png");
+  min-height: 400px;
+}
+
+/*.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}*/
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #520001;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+p {
+	text-align: center;
+  color: #47090A;
+}
+	/*Nav Bar*/
+
+.navbar { 
+	position: absolute;
+    left: 0px;
+    height: 40px;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*#logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }*/
+.navbar ul{
+	list-style: none;
+	display: inline-block;
+	margin: 0 auto;
+	list-style: none;
+}
+.navbar a {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar li{
+	margin-top: 9px;
+	float: left;
+	padding-left: 21px;
+}
+.navbar li a { 
+	color: #fff; 
+	opacity:0.6; 
+	font-size: 16px; 
+	text-decoration: none; 
+	font-family: "Lato", sans-serif /*'Wellfleet'*/
+	font-weight: bold; 
+}
+.navbar li a.active {
+	color: #fff; 
+	opacity:1; 
+	border-bottom: 2px solid #fff; 
+}
+.navbar li a:hover { 
+	color: #fff; 
+	opacity:1; 
+}
+/*CSS Grid and Posts*/
+.grid-container {
+	padding-top: 20px;
+	display: grid;
+	/*grid-template-columns: 2fr 2fr 2fr;*/
+	grid-template-rows: 2fr 2fr;
+	grid-column-gap: 20px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+
+<body>
+	<div class="bgimg-1">
+	  <div class="caption">
+	  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Festive Flavors</span>
+	  <span class="border" style="background-color:transparent;">
+		<nav class="navbar">
+			<ul>
+			 <li><a href="file:///C:/Users/sidis/Downloads/JRN/Minimal_FestiveFlavors/index2.html" class="active" title="Next Section">Home</a></li>
+			 <li><a href="recipes/recipe_index.html" class="active" title="Next Section">All Recipes</a></li>
+			 <li><a href="#utensils" class="active" title="Next Section">Kitchen Items</a></li>
+			 <li><a href="#about" class="active" title="Next Section">About</a></li>
+			 <li><a href="#contact" class="active" title="Next Section">Contact</a></li>
+			</ul>
+		</nav>    
+	  </span>
+	  </div>
+	</div>
+	<div style="color: #777; background-color: white; text-align:center; padding:50px 80px; text-align: justify;">
+		<h3 style="text-align:center;">Butter Paneer</h3>
+		<p>Butter Paneer description</p>
+		<div class="grid-container">
+			
+		</div>
+	</div>
+</body>
+</html>
